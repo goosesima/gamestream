@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamestream</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="gamestream.js"></script>
+</head>
+<body>
+    <div id="overlay">
+
+    </div>
+    <div id="gamepadOverlay">
+        <div>A</div>
+        <div>B</div>
+        <div>X</div>
+        <div>Y</div>
+        <div>↑</div>
+        <div>↓</div>
+        <div>←</div>
+        <div>→</div>
+        <div class="otherBtn">Select</div>
+        <div class="otherBtn">Start</div>
+    </div>
+    <div id="askBox">
+        <h1 id="askBoxText"></h1>
+        <input type="text" id="askBoxInput" placeholder="...">
+        <button id="askBoxBtn">☑️</button>
+    </div>
+    <div id="screen">
+        <div id="bar">
+            <div class="user">
+                <p>👤</p>
+                <b id="nicknameDisplay"></b>
+                <button id="changeNickname">✏️</button>
+            </div>
+            <button id="sayBtn">💬</button>
+            <button id="gamepadReset">🎮🔃</button>
+            <button id="gamepadEdit">🎮✏️</button>
+            <div class="op">
+                <button id="capture">
+                    Capture
+                </button>
+                <video id="video"></video>
+            </div>
+            <button id="btnFullscreen">⇱</button>
+        </div>
+        <img id="display">
+        <canvas id="canvas" height="270" width="480"></canvas>
+    </div>
+</body>
+</html>
